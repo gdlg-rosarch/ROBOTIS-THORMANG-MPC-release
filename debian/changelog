@@ -1,0 +1,15 @@
+ros-kinetic-thormang3-kinematics-dynamics (0.1.0-0wily) wily; urgency=high
+
+  * first public release for Kinetic
+  * modified package information for release
+  * Walking Module Update
+    divide balance algorithm
+    made thormang3_balance_control
+  * ROS C++ coding style is applied
+  * modified ROS c++ coding style is applied
+  * ROS c++ coding stylie is applying, first thormang3_kinematics_dynamics complete
+  * Contributors: Jay Song, Zerom, Pyo, SCH
+
+ -- Pyo <pyo@robotis.com>  Wed, 17 Aug 2016 15:00:00 -0000
+
+
