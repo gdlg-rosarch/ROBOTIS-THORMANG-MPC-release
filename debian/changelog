@@ -1,0 +1,9 @@
+ros-kinetic-thormang3-mpc (0.1.0-0wily) wily; urgency=high
+
+  * first public release for Kinetic
+  * modified package information for release
+  * Contributors: Jay Song, Zerom, Pyo, Kayman, SCH
+
+ -- Pyo <pyo@robotis.com>  Wed, 17 Aug 2016 15:00:00 -0000
+
+
