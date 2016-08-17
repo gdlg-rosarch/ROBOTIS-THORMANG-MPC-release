@@ -1,0 +1,9 @@
+ros-kinetic-imu-3dm-gx4 (0.1.0-0xenial) xenial; urgency=high
+
+  * modified package information for release
+  * modified the original sources (imu_3dm_gx4)
+  * Contributors: Jay Song, Zerom, Pyo
+
+ -- Jay Song <hjsong@robotis.com>  Wed, 17 Aug 2016 15:00:00 -0000
+
+
