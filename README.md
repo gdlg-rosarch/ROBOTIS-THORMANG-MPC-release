@@ -1,2 +1,0 @@
-# ROBOTIS-THORMANG
-THORMANG Series Repository
