@@ -1,0 +1,48 @@
+ros-kinetic-thormang3-mpc (0.1.2-0xenial) xenial; urgency=high
+
+  * removed error of negative cut_off_freq
+  * bug fix : balance param and joint feedback gain update
+  * bug fix : joint feedback gain update
+  * when balance turned off, walking can be started
+  * modified done msg in walking module and action module
+  * upgrade walking balance control
+  * 
+    
+      * fixed package dependencies
+    
+  * 
+    
+      * optimized cpu usage by spin loop (by astumpf)
+    
+  * Merge branch 'whole-body' into walking_upgrade
+  * bug fix : incorrect target force for balance
+  * Merge branch 'whole-body' into walking_upgrade
+  * wholebody modified
+  * 
+    
+      * reduce CPU consumption
+    
+  * wholebody inipose added
+  * update thormang3_head_control_module : scan lidar using range
+  * Contributors: Jay Song, Zerom, Kayman
+
+ -- Pyo <pyo@robotis.com>  Sun, 23 Apr 2017 15:00:00 -0000
+
+ros-kinetic-thormang3-mpc (0.1.1-0xenial) xenial; urgency=high
+
+  * bug fix
+  * package name changed
+    imu_3dm_gx4 -> thormang3_imu_3dm_gx4
+  * Contributors: Jay Song
+
+ -- Pyo <pyo@robotis.com>  Thu, 18 Aug 2016 15:00:00 -0000
+
+ros-kinetic-thormang3-mpc (0.1.0-0xenial) xenial; urgency=high
+
+  * first public release for Kinetic
+  * modified package information for release
+  * Contributors: Jay Song, Zerom, Pyo, Kayman, SCH
+
+ -- Pyo <pyo@robotis.com>  Wed, 17 Aug 2016 15:00:00 -0000
+
+
