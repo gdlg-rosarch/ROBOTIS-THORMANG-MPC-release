@@ -1,0 +1,13 @@
+Source: ros-kinetic-thormang3-kinematics-dynamics
+Section: misc
+Priority: extra
+Maintainer: Pyo <pyo@robotis.com>
+Build-Depends: debhelper (>= 9.0.0), ros-kinetic-catkin, ros-kinetic-cmake-modules, ros-kinetic-robotis-math, ros-kinetic-roscpp
+Homepage: http://wiki.ros.org/thormang3_mpc
+Standards-Version: 3.9.2
+
+Package: ros-kinetic-thormang3-kinematics-dynamics
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-kinetic-cmake-modules, ros-kinetic-roscpp
+Description: This package provides a kinematics and dynamics impletation for the thormang3.
+ It can be used to calculate forward and inverse kinematics.
