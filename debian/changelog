@@ -1,0 +1,43 @@
+ros-kinetic-thormang3-gripper-module (0.1.2-0wily) wily; urgency=high
+
+  * gripper done msg added
+  * manipulation & gripper module clean up
+  * wholebody modified
+  * wholebody inipose added
+  * update thormang3_head_control_module : scan lidar using range
+  * wholebody update
+  * gripper debug
+  * gripper module added
+  * wholebody added
+  * Contributors: Jay Song, Zerom, Kayman, SCH
+  * Merge remote-tracking branch 'origin/develop'
+    # Conflicts:
+    #     thormang3_manager/CMakeLists.txt
+    #     thormang3_manager/package.xml
+  * gripper done msg added
+  * manipulation & gripper module clean up
+  * wholebody modified
+  * wholebody inipose added
+  * update thormang3_head_control_module : scan lidar using range
+  * wholebody update
+  * gripper debug
+  * .
+  * gripper module added
+  * wholebody added
+  * Contributors: Jay-Song, ROBOTIS-zerom, kayman, s-changhyun, sch
+
+ -- Pyo <pyo@robotis.com>  Sun, 23 Apr 2017 15:00:00 -0000
+
+ros-kinetic-thormang3-gripper-module (0.1.1-0wily) wily; urgency=high
+
+
+
+ -- Pyo <pyo@robotis.com>  Thu, 18 Aug 2016 15:00:00 -0000
+
+ros-kinetic-thormang3-gripper-module (0.1.0-0wily) wily; urgency=high
+
+
+
+ -- Pyo <pyo@robotis.com>  Wed, 17 Aug 2016 15:00:00 -0000
+
+
