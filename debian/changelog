@@ -1,0 +1,45 @@
+ros-kinetic-thormang3-base-module (0.1.2-0jessie) jessie; urgency=high
+
+  * added done msg to base_module
+  * 
+    
+      * fixed package dependencies
+    
+  * 
+    
+      * optimized cpu usage by spin loop (by astumpf)
+    
+  * wholebody modified
+  * 
+    
+      * reduce CPU consumption
+    
+  * wholebody inipose added
+  * update thormang3_head_control_module : scan lidar using range
+  * change init pose
+  * Contributors: Jay Song, Zerom, Kayman
+
+ -- Pyo <pyo@robotis.com>  Sun, 23 Apr 2017 15:00:00 -0000
+
+ros-kinetic-thormang3-base-module (0.1.1-0jessie) jessie; urgency=high
+
+  * none
+
+ -- Pyo <pyo@robotis.com>  Thu, 18 Aug 2016 15:00:00 -0000
+
+ros-kinetic-thormang3-base-module (0.1.0-0jessie) jessie; urgency=high
+
+  * first public release for Kinetic
+  * modified package information for release
+  * thormang3_base_module : rename RobotisState -> BaseModuleState
+  * applying coding style
+  * file name changed.
+  * modified coding style..
+  * ROS c++ coding stylie is applying, first thormang3_kinematics_dynamics complete
+  * fixed high CPU consumption due to busy waits
+  * added Singleton template
+  * Contributors: Alexander Stumpf, Zerom, Pyo, SCH
+
+ -- Pyo <pyo@robotis.com>  Wed, 17 Aug 2016 15:00:00 -0000
+
+
