@@ -1,0 +1,12 @@
+Source: ros-kinetic-thormang3-balance-control
+Section: misc
+Priority: extra
+Maintainer: Pyo <pyo@robotis.com>
+Build-Depends: debhelper (>= 9.0.0), ros-kinetic-catkin, ros-kinetic-cmake-modules, ros-kinetic-robotis-math, ros-kinetic-roscpp
+Homepage: http://wiki.ros.org/thormang3_balance_control
+Standards-Version: 3.9.2
+
+Package: ros-kinetic-thormang3-balance-control
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-kinetic-robotis-math, ros-kinetic-roscpp
+Description: The thormang3_balance_control package This balance control is based on PD control.
