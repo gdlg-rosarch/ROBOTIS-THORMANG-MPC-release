@@ -1,0 +1,26 @@
+ros-kinetic-ati-ft-sensor (0.1.2-0wily) wily; urgency=high
+
+  * none
+
+ -- Pyo <pyo@robotis.com>  Sun, 23 Apr 2017 15:00:00 -0000
+
+ros-kinetic-ati-ft-sensor (0.1.1-0wily) wily; urgency=high
+
+  * none
+
+ -- pyo <pyo@robotis.com>  Thu, 18 Aug 2016 15:00:00 -0000
+
+ros-kinetic-ati-ft-sensor (0.1.0-0wily) wily; urgency=high
+
+  * first public release for Kinetic
+  * modified package information for release
+  * ROS C++ coding style is applied
+  * change namespace of ati_ft_sensor package
+  * modified file name for ROS C++ coding style
+  * ati_ft_sensor/ATIForceTorqueSensorTWE.h : RobotisMath.h -> robotis_math.h
+  * ROS c++ coding stylie is applying, first thormang3_kinematics_dynamics complete
+  * Contributors: Jay Song, Zerom, Pyo, SCH
+
+ -- pyo <pyo@robotis.com>  Wed, 17 Aug 2016 15:00:00 -0000
+
+
