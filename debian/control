@@ -1,0 +1,13 @@
+Source: ros-kinetic-thormang3-walking-module
+Section: misc
+Priority: extra
+Maintainer: Pyo <pyo@robotis.com>
+Build-Depends: debhelper (>= 9.0.0), ros-kinetic-catkin, ros-kinetic-cmake-modules, ros-kinetic-eigen-conversions, ros-kinetic-robotis-controller-msgs, ros-kinetic-robotis-framework-common, ros-kinetic-robotis-math, ros-kinetic-roscpp, ros-kinetic-sensor-msgs, ros-kinetic-std-msgs, ros-kinetic-thormang3-balance-control, ros-kinetic-thormang3-kinematics-dynamics, ros-kinetic-thormang3-walking-module-msgs
+Homepage: http://wiki.ros.org/thormang3_walking_module
+Standards-Version: 3.9.2
+
+Package: ros-kinetic-thormang3-walking-module
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-kinetic-cmake-modules, ros-kinetic-eigen-conversions, ros-kinetic-robotis-controller-msgs, ros-kinetic-robotis-framework-common, ros-kinetic-robotis-math, ros-kinetic-roscpp, ros-kinetic-sensor-msgs, ros-kinetic-std-msgs, ros-kinetic-thormang3-balance-control, ros-kinetic-thormang3-kinematics-dynamics, ros-kinetic-thormang3-walking-module-msgs
+Description: This package is a motion module for thormang3 walking.
+ This package provides a online walking pattern generator for the thormang3.
