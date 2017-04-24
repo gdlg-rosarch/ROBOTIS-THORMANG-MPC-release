@@ -1,0 +1,12 @@
+Source: ros-kinetic-thormang3-manager
+Section: misc
+Priority: extra
+Maintainer: Pyo <pyo@robotis.com>
+Build-Depends: debhelper (>= 9.0.0), ros-kinetic-catkin, ros-kinetic-cmake-modules, ros-kinetic-dynamixel-sdk, ros-kinetic-robotis-controller, ros-kinetic-robotis-controller-msgs, ros-kinetic-robotis-device, ros-kinetic-robotis-framework-common, ros-kinetic-roscpp, ros-kinetic-thormang3-action-module, ros-kinetic-thormang3-balance-control, ros-kinetic-thormang3-base-module, ros-kinetic-thormang3-feet-ft-module, ros-kinetic-thormang3-gripper-module, ros-kinetic-thormang3-head-control-module, ros-kinetic-thormang3-manipulation-module, ros-kinetic-thormang3-walking-module
+Homepage: http://wiki.ros.org/thormang3_manager
+Standards-Version: 3.9.2
+
+Package: ros-kinetic-thormang3-manager
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-kinetic-robotis-controller, ros-kinetic-roscpp
+Description: This package describes robot manager to execute THORMANG3's motion modules.
