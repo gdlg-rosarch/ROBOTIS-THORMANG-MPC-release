@@ -1,0 +1,24 @@
+ros-kinetic-thormang3-imu-3dm-gx4 (0.1.2-0wily) wily; urgency=high
+
+  * none
+
+ -- Jay Song <hjsong@robotis.com>  Sun, 23 Apr 2017 15:00:00 -0000
+
+ros-kinetic-thormang3-imu-3dm-gx4 (0.1.1-0wily) wily; urgency=high
+
+  * bug fix
+  * package name changed
+    imu_3dm_gx4 -> thormang3_imu_3dm_gx4
+  * Contributors: Jay Song
+
+ -- Jay Song <hjsong@robotis.com>  Thu, 18 Aug 2016 15:00:00 -0000
+
+ros-kinetic-thormang3-imu-3dm-gx4 (0.1.0-0wily) wily; urgency=high
+
+  * modified package information for release
+  * modified the original sources (imu_3dm_gx4)
+  * Contributors: Jay Song, Zerom, Pyo
+
+ -- Jay Song <hjsong@robotis.com>  Wed, 17 Aug 2016 15:00:00 -0000
+
+
