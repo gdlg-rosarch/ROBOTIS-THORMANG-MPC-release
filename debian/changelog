@@ -1,0 +1,77 @@
+ros-kinetic-thormang3-walking-module (0.1.3-0jessie) jessie; urgency=high
+
+  * updated cmake file for ros install
+  * Contributors: SCH
+
+ -- Pyo <pyo@robotis.com>  Mon, 22 May 2017 15:00:00 -0000
+
+ros-kinetic-thormang3-walking-module (0.1.2-0jessie) jessie; urgency=high
+
+  * removed error of negative cut_off_freq
+  * bug fix : balance param and joint feedback gain update
+  * bug fix : joint feedback gain update
+  * when balance turned off, walking can be started
+  * modified done msg in walking module and action module
+  * upgrade walking balance control
+  * 
+    
+      * fixed package dependencies
+    
+  * 
+    
+      * optimized cpu usage by spin loop (by astumpf)
+    
+  * Merge branch 'whole-body' into walking_upgrade
+  * bug fix : incorrect target force for balance
+  * Merge branch 'whole-body' into walking_upgrade
+  * wholebody modified
+  * 
+    
+      * reduce CPU consumption
+    
+  * wholebody inipose added
+  * update thormang3_head_control_module : scan lidar using range
+  * Contributors: Jay Song, Zerom, Kayman
+
+ -- Pyo <pyo@robotis.com>  Sun, 23 Apr 2017 15:00:00 -0000
+
+ros-kinetic-thormang3-walking-module (0.1.1-0jessie) jessie; urgency=high
+
+  * modify CMakeLists.txt for sync
+  * file name is changed
+  * bug fix
+  * Contributors: Jay Song
+
+ -- Pyo <pyo@robotis.com>  Thu, 18 Aug 2016 15:00:00 -0000
+
+ros-kinetic-thormang3-walking-module (0.1.0-0jessie) jessie; urgency=high
+
+  * first public release for Kinetic
+  * modified package information for release
+  * modified thormang3_walking_module/package.xml
+  * removed some codes that commented out.
+  * fifth trajectory is applied
+  * modified File name
+    thormang3_online_walking.h
+    thormang3_online_walking.cpp
+    thormang3_walking_module.h
+    thormang3_wakling_module.cpp
+  * removed walking_module_math & modify thormang3_balance_control
+    added set enable function for each balance algorithm
+    removed walking module math
+  * modified target force calculation
+    modified thormang3_walking_module/src/robotis_online_walking.cpp
+    add target force calculation for fx fy
+  * added Function - action play for only specified joints
+    modified action_module.h
+    modified action_module.cpp
+    modified message in walking_module.cpp
+  * StepData can be changed in walking.
+    modify thormang3_walking_module/src/wakling_module.cpp
+  * ROS C++ coding style is applied.
+  * fixed high CPU consumption due to busy waits
+  * Contributors: Alexander Stumpf, Jay Song, Zerom, Pyo, SCH
+
+ -- Pyo <pyo@robotis.com>  Wed, 17 Aug 2016 15:00:00 -0000
+
+
