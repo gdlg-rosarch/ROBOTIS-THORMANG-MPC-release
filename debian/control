@@ -1,0 +1,12 @@
+Source: ros-kinetic-thormang3-feet-ft-module
+Section: misc
+Priority: extra
+Maintainer: Pyo <pyo@robotis.com>
+Build-Depends: debhelper (>= 9.0.0), libboost-all-dev, libeigen3-dev, libyaml-cpp-dev, ros-kinetic-ati-ft-sensor, ros-kinetic-catkin, ros-kinetic-cmake-modules, ros-kinetic-robotis-controller-msgs, ros-kinetic-robotis-framework-common, ros-kinetic-robotis-math, ros-kinetic-roscpp, ros-kinetic-std-msgs, ros-kinetic-thormang3-feet-ft-module-msgs, ros-kinetic-thormang3-kinematics-dynamics
+Homepage: http://wiki.ros.org/thormang3_feet_ft_module
+Standards-Version: 3.9.2
+
+Package: ros-kinetic-thormang3-feet-ft-module
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libboost-all-dev, libeigen3-dev, libyaml-cpp-dev, ros-kinetic-ati-ft-sensor, ros-kinetic-cmake-modules, ros-kinetic-robotis-controller-msgs, ros-kinetic-robotis-framework-common, ros-kinetic-robotis-math, ros-kinetic-roscpp, ros-kinetic-std-msgs, ros-kinetic-thormang3-feet-ft-module-msgs, ros-kinetic-thormang3-kinematics-dynamics
+Description: This package is a sensor module for force torque sensors on feet.
