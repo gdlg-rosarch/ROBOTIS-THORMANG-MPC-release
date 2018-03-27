@@ -1,32 +1,18 @@
 /*******************************************************************************
- * Copyright (c) 2016, ROBOTIS CO., LTD.
- * All rights reserved.
- *
- * Redistribution and use in source and binary forms, with or without
- * modification, are permitted provided that the following conditions are met:
- *
- * * Redistributions of source code must retain the above copyright notice, this
- *   list of conditions and the following disclaimer.
- *
- * * Redistributions in binary form must reproduce the above copyright notice,
- *   this list of conditions and the following disclaimer in the documentation
- *   and/or other materials provided with the distribution.
- *
- * * Neither the name of ROBOTIS nor the names of its
- *   contributors may be used to endorse or promote products derived from
- *   this software without specific prior written permission.
- *
- * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
- * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
- * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
- * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
- * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
- * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
- * SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
- * CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
- * OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
- * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
- *******************************************************************************/
+* Copyright 2018 ROBOTIS CO., LTD.
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*     http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*******************************************************************************/
 
 /*
  * thormang3_online_walking.h
@@ -40,12 +26,17 @@
 #define THORMANG3_WALKING_MODULE_THORMANG3_ONLINEL_WALKING_H_
 
 #include <vector>
+#include <ros/ros.h>
+#include <ros/package.h>
 #include <boost/thread.hpp>
+#include <eigen3/Eigen/Eigen>
+#include <yaml-cpp/yaml.h>
 
-#include "thormang3_balance_control/thormang3_balance_control.h"
 #include "robotis_framework_common/singleton.h"
-#include "thormang3_kinematics_dynamics/kinematics_dynamics.h"
 #include "robotis_math/robotis_math.h"
+
+#include "thormang3_kinematics_dynamics/kinematics_dynamics.h"
+#include "thormang3_balance_control/thormang3_balance_control.h"
 
 #define _USE_PD_BALANCE_
 
@@ -73,9 +64,9 @@ public:
   void setRefZMPDecisionParameter(double X_ZMP_CenterShift, double Y_ZMP_CenterShift, double Y_ZMP_Convergence);
 
   bool setInitialPose(double r_foot_x, double r_foot_y, double r_foot_z, double r_foot_roll, double r_foot_pitch, double r_foot_yaw,
-      double l_foot_x, double l_foot_y, double l_foot_z, double l_foot_roll, double l_foot_pitch, double l_foot_yaw,
-      double center_of_body_x, double center_of_body_y, double center_of_body_z,
-      double center_of_body_roll, double center_of_body_pitch, double center_of_body_yaw);
+                      double l_foot_x, double l_foot_y, double l_foot_z, double l_foot_roll, double l_foot_pitch, double l_foot_yaw,
+                      double center_of_body_x, double center_of_body_y, double center_of_body_z,
+                      double center_of_body_roll, double center_of_body_pitch, double center_of_body_yaw);
 
   void setInitalWaistYawAngle(double waist_yaw_angle_rad);
 
@@ -130,6 +121,18 @@ private:
 
   double wsin(double time, double period, double period_shift, double mag, double mag_shift);
   double wsigmoid(double time, double period, double time_shift, double mag, double mag_shift, double sigmoid_ratio, double distortion_ratio);
+
+  double r_leg_to_body_roll_gain_, l_leg_to_body_roll_gain_;
+  double r_leg_to_body_pitch_gain_, l_leg_to_body_pitch_gain_;
+  Eigen::MatrixXd des_balance_offset_;
+  robotis_framework::MinimumJerkViaPoint *feed_forward_tra_;
+  int     mov_size_, mov_step_;
+  double  mov_time_;
+  bool init_balance_offset_;
+
+  void parseBalanceOffsetData(const std::string &path);
+  void initBalanceOffset();
+  void setBalanceOffset();
 
   KinematicsDynamics* thormang3_kd_;
 
