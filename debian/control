@@ -1,0 +1,12 @@
+Source: ros-kinetic-motion-module-tutorial
+Section: misc
+Priority: extra
+Maintainer: Pyo <pyo@robotis.com>
+Build-Depends: debhelper (>= 9.0.0), libboost-all-dev, ros-kinetic-catkin, ros-kinetic-robotis-framework-common, ros-kinetic-roscpp, ros-kinetic-std-msgs
+Homepage: http://wiki.ros.org/motion_module_tutorial
+Standards-Version: 3.9.2
+
+Package: ros-kinetic-motion-module-tutorial
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libboost-all-dev, ros-kinetic-robotis-framework-common, ros-kinetic-roscpp, ros-kinetic-std-msgs
+Description: The motion_module_tutorial package
